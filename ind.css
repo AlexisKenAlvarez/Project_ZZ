@@ -87,6 +87,7 @@ html, body {
   width: 100%;
   position: fixed;
   z-index: 9999999;
+  height: 5vh;
 }
 
 .nav_wrapper {
@@ -100,21 +101,22 @@ html, body {
 }
 
 .nav_right {
-  height: 50px;
+  height: 100%;
   max-width: 450px;
-  width: 100%;
+  width: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
   font-family: 'Ubuntu', sans-serif;
   color: #38445c;
+  margin-right: -100px;
 }
 
 .home, .about, .contact {
   background-color: #38445c;
   border-radius: 10px;
-  height: 200%;
-  width: 100px;
+  height: 10vh;
+  width: 20%;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -122,17 +124,15 @@ html, body {
   transition: transform 0.2s ease-in-out;
 }
 
+.nav_text {
+  font-size: 1.9vh;
+}
+
+
 .active {
   transform: translateY(0%);
 }
 
-#home_div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 a {
   text-decoration: none;
